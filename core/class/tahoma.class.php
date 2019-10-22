@@ -333,6 +333,11 @@ class tahoma extends eqLogic {
 							$tahomaCmd->setType('action');
 							$tahomaCmd->setSubType('other');
 							$tahomaCmd->setDisplay('icon', '<i class="fa fa-exchange"></i>');
+						} else if ($command->commandName == "setForceHeating") {
+							//forcage chauffe eau gestionnaire d'energie
+							$tahomaCmd->setType('action');
+							$tahomaCmd->setSubType('other');
+							$tahomaCmd->setDisplay('icon', '<i class="fa fa-toggle-on"></i>');
 						} else {
 							$useCmd = false;
 						}
